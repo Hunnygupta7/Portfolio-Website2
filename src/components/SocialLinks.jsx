@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaFacebookF } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
@@ -44,10 +44,30 @@ const SocialLinks = () => {
       style: "rounded-br-md",
       download: true,
     },
+    {
+      id: 5,
+      child: (
+      <>
+          Instagram <FaInstagram size={30} />
+      </>
+      ),
+      href: "https://www.instagram.com/hunny._.gupta/",
+      },
+  {
+      id: 6,
+      child: (
+        <>
+          Facebook <FaFacebookF size={30} />
+        </>
+      ),
+      href: "https://www.facebook.com/hunny.gupta.0315",
+      style: "rounded-br-md",
+      download: true,
+    },
   ];
 
   return (
-    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
+    <div className="hidden lg:flex flex-col top-[30%] left-0 fixed">
       <ul>
         {links.map(({ id, child, href, style, download }) => (
           <li
