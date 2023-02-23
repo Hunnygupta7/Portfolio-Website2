@@ -26,8 +26,6 @@ const Projects = () => {
 
   return (
     <div
-
-    
       name="projects"
       
       className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen "
@@ -53,7 +51,8 @@ const Projects = () => {
                 
                 <a href={link} target="_blank" rel="noopener noreferrer">
                   <button className="w-1/2 px-4 py-2 m-2 duration-200 hover:scale-105 text-xl">
-                    Code
+                    <p style={{fontWeight: 'bold'}}> Code </p>
+                   
                   </button>
                 </a>
               </div>
